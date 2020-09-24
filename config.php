@@ -12,10 +12,13 @@ return [
     'aliases' => [
         '@micro' => __DIR__,
     ],
-    /* 'components' => [
+    'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'sqlite:@micro/database.sqlite',
+            'dsn' => 'mysql:host=localhost;dbname=yii2_micro_admin',
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8mb4',
         ],
-    ], */
+    ],
 ];
