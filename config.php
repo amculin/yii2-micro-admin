@@ -22,7 +22,17 @@ $config = [
         ],
         'request' => [
             'cookieValidationKey' => 'pp23K-3dsxwQQcw_1oPWNd8w_8As'
-        ]
+        ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            //'rules' => $url,
+        ],
+        'user' => [
+            'identityClass' => 'app\models\User',
+            'enableAutoLogin' => true,
+            'loginUrl' => ['/login'],
+        ],
     ],
 ];
 
